@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magnate</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="offcanvas offcanvas-top container" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="z-index: 100000000;">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasTopLabel">Музыкальная вкладка</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <h6>Сейчас играет: <span id="currentAudio">Phil France - The Swimmer</span></h6>
+    </div>
+  </div>
+
+  <div class="card music-box">Toggle music</div>
+  <div class="card theme" id="themes">Theme</div>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+            <div class=" container py-1">
+                <a class="navbar-brand d-flex align-items-center" href="#"><img src="img/favicon.ico">
+                    <h2 class="m-0 ms-2">MAGNATE</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                          <a class="nav-link me-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Музыка</a>
+                          <!-- <button class="btn btn-primary" type="button">Toggle top offcanvas</button> -->
+                        </li>  
+                        <li class="nav-item">
+                          <a class="nav-link me-5" href="index.html#about">О нас</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" aria-current="page" href="index.html#contact">Свяжитесь с нами</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-5" href="index.html#doings">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-5" href="index.html#cats">Ассортимент</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main >
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide container-fluid g-0" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="custom-carousel container-fluid" id="carousel1">
+                      <!-- <button class="btn btn-lg mt-5 z-10">sdfsdfs</button> -->
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <div class="custom-carousel container-fluid" id="carousel2"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="divider-page" ></div>
+
+        <div class="container p-5 d-flex flex-column align-items-center text-center">
+          <h1 class="fw-normal align-items-center p">Станьте лучшей версией себя.</h1>
+
+          <p class="lead" id="about">Мы предлагаем вам ассортимент товаров и услуг связанных с оздоровительной йогой в современном мире.</p>
+        </div>
+        <hr class="divider-page container mx-auto">
+        <div class="row container mx-sm-5">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Мы верим в новое поколение, что сумеет <span class="text-muted"> <br> приспособиться к новым суровым реалиям</span>.</h2> <br>
+            <p class="lead featurette-text">Быть в гармонии с самими собой значит быть в гармонии с остальным миром. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium temporibus nemo accusamus, eum similique eius quibusdam delectus. Et atque commodi fugiat recusandae, ea impedit?</p> <br>
+            <button class="btn btn-lg btn-secondary" id="findOutButton">Узнать больше</button>
+          </div>
+          <div class="col-md-5">
+            <div class="custom-img-about img-fluid mx-auto"></div>
+          </div>
+        </div>
+
+        
+        <hr class="divider-page container mx-auto" id="cats">
+
+        <div class="container p-5 d-flex flex-column align-items-center text-center">
+          <h1 class="fw-normal align-items-center p">Ассортимент наших товаров.</h1>
+
+          <p class="lead">Здесь вы можете выбрать для себя все необходимое для занятия йогой в современном мире.</p>
+          <img class="mx-auto centered" src="svgs/solid/circle-arrow-down.svg" id="arrowDownAssortiment" width="30px">
+        </div>
+
+        <div class="row container mx-auto" id="assortiment">
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop1"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Майка женская</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-outline-secondary mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">12500тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop2"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Леггинсы</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-outline-secondary mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">9500тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop3"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Резинка</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-outline-secondary mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">11000тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop4"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Коврик для йоги</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-outline-secondary mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">12000тг.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop5"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Футболка</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-outline-secondary mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">5000тг.</small>
+              </div>
+            </div>
+          </div>
+                    <div class="col-md-4 mb-5">
+            <div class="container-fluid p-0 shadow card">
+              <div class="custom-img img-fluid" id="shop6"></div>
+              <div class="card-body mt-2 mx-4">
+                <h2 class="fw-light">Шорты</h2>
+                <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita quo itaque exercitationem distinctio vero?</p>
+                <a href="#getcat"><button class="btn btn-outline-secondary mb-3">Купить</button></a>
+                <small class="muted mx-auto mt-2 float-end">13000тг.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider-page container mx-auto">
+
+        <div class="bg-white">
+          <div class="container py-1">
+            <section id="doings">
+              <h2 class="d-flex flex-column justify-content-center mt-5 text-center" style="color: black;"><p class="mb-3">Список наших услуг</p>
+              <img class="mx-auto" src="svgs/solid/circle-arrow-down.svg" id="arrowDownPricelist" width="30px"></h2>
+              <div class="mayble">
+                <table class="table mt-5">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Название</th>
+                      <th scope="col">Цена</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-default">
+                      <th scope="row">1</th>
+                      <td>Консультация с тренером</td>
+                      <td>12500тг.</td>
+                    </tr>
+                    <tr class="table-light">
+                      <th scope="row">2</th>
+                      <td>Индивидуальное занятие</td>
+                      <td>9050тг.</td>
+                    </tr>
+                    <tr class="table-default">
+                      <th scope="row">3</th>
+                      <td>Групповое занятие</td>
+                      <td>11000тг.</td>
+                    </tr>
+                    <tr class="table-light">
+                      <th scope="row">4</th>
+                      <td>Интенсив</td>
+                      <td>120000тг.</td>
+                    </tr>
+                    <tr class="table-default">
+                      <th scope="row">5</th>
+                      <td>Групповая прогулка по парку</td>
+                      <td>Бесплатно</td>
+                    </tr>
+                    <tr class="table-light">
+                      <th scope="row">6</th>
+                      <td>Стать амбассадором</td>
+                      <td>13000тг.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+    </div>
+                <footer class="container">
+                    <p class="float-end"><a href="#" class="anchorFix">На верх</a></p>
+                    <p class="mb-5">С любовью и заботой к Своему телу и Разуму. <span id="easter">&copy;</span></p>
+
+                </footer>
+    </main>
+
+    
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+#carousel1 {background-image: url(https://www.ethicalconsumer.org/sites/default/files/styles/primary_image_xlarge/public/images/2018-11/sportswear-ethical-guide_0.jpg?h=b231ac5c&itok=LWuODZ7e);}
+#carousel2 {background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1027c074245851.5c280ec60678e.jpg);}
+
+#shop1{background-image: url(https://zoodmall.com/cdn-cgi/image/w=500,fit=contain,f=auto/http://luckyretail.com/Uploadfile/201904311/224114A1/224114A1-2.jpg);}
+#shop2{background-image: url(https://image-cdn.kazanexpress.ru/c5d8gtd667fqa8chc2ng/original.jpg);}
+#shop3{background-image: url(https://contents.mediadecathlon.com/p2027171/k$68512e254c7be2edbbe9bde59ecaf047/2027171.jpg?format=auto&quality=70&f=800x800);}
+#shop4{background-image: url(https://megamarket.in.ua/wp-content/uploads/2021/06/3085716973_kovrik-dlya-jogi.jpg);}
+#shop5{background-image: url(https://contents.mediadecathlon.com/p1942521/k$607965f9216a5f81f7477cccc1ee16fc/1942521.jpg?format=auto&quality=70&f=800x800);}
+#shop6{background-image: url(https://sc04.alicdn.com/kf/H27643c9f1c5f42fabd80562beeac4b32q.jpg);}
+
+.music-box{
+    cursor: pointer;
+    position: fixed;
+    top: 1.5%;
+    left: 35%;
+    border-radius: 45px;
+    padding: 15px;
+    color: rgb(0, 225, 255);
+    border: 2px solid rgb(0, 225, 255);
+    z-index: 10000;
+}
+
+.theme {
+    cursor: pointer;
+    position: fixed;
+    top: 1.5%;
+    left: 93%;
+    border-radius: 45px;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    z-index: 10000;
+}
+
+.dark-mode-button {
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.671);
+    border: 2px solid rgb(255, 255, 255);
+}
+.dark-mode {
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.dark-mode-for-music {background-color: rgba(0, 0, 0, 0.322);}
+
+.custom-carousel {
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+.custom-img {
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+.custom-img-about {
+    width: 450px;
+    height: 600px;
+    background-image: url(https://48hek16fz3v44ucrz23ycz4h-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/sunset-yoga-big-1696x2560.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.divider-page {
+    margin: 5rem 0;
+  }
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.featurette-text {
+    line-height: 40px;
+    
+}
+#findOutButton {
+    margin: 0 0 50px 0px;
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+
+    }
+    
+}
+@media (max-width: 361px) {
+    .music-box{
+        top: 90%;
+        left: 5%;
+    }
+    .theme {
+        top: 90%;
+        left: 70%;
+    }
+}
+.z-10 {z-index: 10;}
+.upsideDown {transform: rotate(180deg);}
